@@ -1,0 +1,142 @@
+
+@import "./init.less";
+@import "./reset.less";
+
+.ui-size{
+    &.ui-small{
+        padding: 5px 10px;
+    }
+    &.ui-mini{
+        padding: 2px 4px;
+    }
+    &.ui-large{
+        padding: 8px 16px;
+    }
+}
+
+.ui-button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    transform: translateY(45px);
+    border-radius: 3px;
+    
+    &:last-child{
+        margin-right: 0;
+    }
+    &.ui-primary{
+        background-color: @primary;
+        color: #fff;
+        &:hover{
+            background-color: fadeout(@primary,20%);
+        }
+        &:active{
+            background-color: fadein(@primary,20%);
+        }
+        &.ui-text{
+            background-color: transparent;
+            color: @primary;
+            &:hover{
+                color: fadeout(@primary,20%);
+            }
+            &:active{
+                color: fadein(@primary,20%);
+            }
+        }
+    }
+    &.ui-success{
+        background-color: @success;
+        color: #fff;
+        &:hover{
+            background-color: fadeout(@success,20%);
+        }
+        &:active{
+            background-color: fadein(@success,20%);
+        }
+        &.ui-text{
+            background-color: transparent;
+            color: @success;
+            &:hover{
+                color: fadeout(@success,20%);
+            }
+            &:active{
+                color: fadein(@success,20%);
+            }
+        }
+    }
+    &.ui-warning{
+        background-color: @warning;
+        color: #fff;
+        &:hover{
+            background-color: fadeout(@warning,20%);
+        }
+        &:active{
+            background-color: fadein(@warning,20%);
+        }
+        &.ui-text{
+            background-color: transparent;
+            color: @warning;
+            &:hover{
+                color: fadeout(@warning,20%);
+            }
+            &:active{
+                color: fadein(@warning,20%);
+            }
+        }
+    }
+    &.ui-danger{
+        background-color: @danger;
+        color: #fff;
+        &:hover{
+            background-color: fadeout(@danger,20%);
+        }
+        &:active{
+            background-color: fadein(@danger,20%);
+        }
+        &.ui-text{
+            background-color: transparent;
+            color: @danger;
+            &:hover{
+                color: fadeout(@danger,20%);
+            }
+            &:active{
+                color: fadein(@danger,20%);
+            }
+        }
+    }
+    &.ui-info{
+        background-color: @info;
+        color: #fff;
+        &:hover{
+            background-color: fadeout(@info,20%);
+        }
+        &:active{
+            background-color: fadein(@info,20%);
+        }
+        &.ui-text{
+            background-color: transparent;
+            color: @info;
+            &:hover{
+                color: fadeout(@info,20%);
+            }
+            &:active{
+                color: fadein(@info,20%);
+            }
+        }
+    }
+}
+
+.ui-progress{
+    height: 2px;
+    width: 100%;
+    background-color: @primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
