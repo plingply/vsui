@@ -1,11 +1,12 @@
 {
-    "name": "vsui",
+    "name": "vscoding-ui",
     "version": "1.0.0",
     "description": "",
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "rollup --config rollup.config.js && gulp less"
+        "build": "rollup --config rollup.config.js && gulp less",
+        "push":"npm publish && git add --all && git commit -a -m 'x' && git push"
     },
     "author": "",
     "license": "ISC",
