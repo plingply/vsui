@@ -38,7 +38,14 @@ progress为全局方法
 ```
 ####pop
 ```javascript
-<ui-pop :canshow="canshow" pref="popover" width="400" positon="right"></ui-pop>
+<ui-pop :canshow="canshow" pref="popover" width="400" positon="right">
+	<div slot="header">
+		头部内容
+	</div>
+	<div slot="footer">
+		底部内容
+	</div>
+</ui-pop>
 
 <ui-button type="primary text" data-popover="popover" size="mini" @click="canshow = true">打开弹框</ui-button>
 /*
