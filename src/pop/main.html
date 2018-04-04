@@ -1,6 +1,6 @@
 <transition name="fade">
     <div class="ui-pop" ref="uiPopover" data-popver="uipopover" v-show="show" :style="{width:width+'px'}">
-      <div class="ui-popheader" :class="{ui-popright:pos=='left',ui-popleft:pos=='right'}">
+      <div class="ui-popheader" :class="{uiPopright:pos=='left',uiPopleft:pos=='right'}">
         <span class="ui-pop_close" @click="show = false"><i class="el-icon-close"></i></span>
         <slot name="header"></slot>
       </div>
