@@ -1,15 +1,19 @@
 {
     "name": "vscoding-ui",
-    "version": "1.1.0",
-    "description": "",
+    "version": "1.1.1",
+    "description": "vue ui progress button pop",
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "gulp",
         "push": "npm publish && git add --all && git commit -a -m 'x' && git push"
     },
-    "author": "",
+    "author": "plingply",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/plingply/vsui.git"
+    },
     "devDependencies": {
         "autoprefixer": "^7.2.6",
         "del": "^3.0.0",
