@@ -121,6 +121,15 @@ footer {
 .ui-size.ui-large {
   padding: 8px 16px;
 }
+.ui-size.ui-small {
+  padding: 5px 10px;
+}
+.ui-size.ui-mini {
+  padding: 2px 4px;
+}
+.ui-size.ui-large {
+  padding: 8px 16px;
+}
 .ui-button {
   border: none;
   cursor: pointer;
@@ -236,17 +245,6 @@ footer {
 .ui-button.ui-info.ui-text:active {
   color: #909399;
 }
-.ui-progress {
-  height: 2px;
-  width: 100%;
-  background-color: #67C23A;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100000;
-  opacity: 0;
-  transition: opacity .3s;
-}
 .ui-pop {
   width: 200px;
   position: absolute;
@@ -297,4 +295,15 @@ footer {
   box-sizing: border-box;
   min-height: 100px;
   border-radius: 0 0 4px 4px;
+}
+.ui-progress {
+  height: 2px;
+  width: 100%;
+  background-color: #67C23A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  opacity: 0;
+  transition: opacity .3s;
 }
