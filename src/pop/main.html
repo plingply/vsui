@@ -1,10 +1,10 @@
 <transition name="fade">
-    <div class="pop" ref="uiPopover" data-popver="uipopover" v-show="show" :style="{width:width+'px'}">
-      <div class="popheader" :class="{popright:pos=='left',popleft:pos=='right'}">
-        <span class="pop_close" @click="show = false"><i class="el-icon-close"></i></span>
+    <div class="ui-pop" ref="uiPopover" data-popver="uipopover" v-show="show" :style="{width:width+'px'}">
+      <div class="ui-popheader" :class="{ui-popright:pos=='left',ui-popleft:pos=='right'}">
+        <span class="ui-pop_close" @click="show = false"><i class="el-icon-close"></i></span>
         <slot name="header"></slot>
       </div>
-      <div class="popfooter">
+      <div class="ui-popfooter">
         <slot name="footer"></slot>
       </div>
     </div>
