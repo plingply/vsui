@@ -30,9 +30,10 @@ let progress = {
 		},
 		finish() {
 			this.count = 100
-			this.opacity = 0
+			this.opacity = 0.5
 			setTimeout(()=>{
 				this.show = false
+				this.opacity = 0
 			},200)
 		}
 	},
