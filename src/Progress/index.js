@@ -34,7 +34,7 @@ let progress = {
 			setTimeout(()=>{
 				this.show = false
 				this.opacity = 0
-			},200)
+			},500)
 		}
 	},
 	created() {
