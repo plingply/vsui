@@ -29,16 +29,15 @@ let progress = {
 			}, 10)
 		},
 		finish() {
-			console.log(this.count)
+			console.log(this.count,'finshed')
 			if (this.count >= 95) {
-				clearInterval(this.intval)
 				this.count = 100
 				setTimeout(() => {
 					this.show = false
 					this.opacity = 0
 				}, 100)
 			} else {
-				this.finish()
+				// this.finish()
 			}
 
 		}
