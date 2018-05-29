@@ -29,11 +29,16 @@ let progress = {
 			}, 10)
 		},
 		finish() {
-			this.count = 100
-			setTimeout(() => {
-				this.show = false
-				this.opacity = 0
-			}, 500)
+			if (this.count >= 95) {
+				this.count = 100
+				setTimeout(() => {
+					this.show = false
+					this.opacity = 0
+				}, 500)
+			} else {
+				this.finish()
+			}
+
 		}
 	},
 	created() {
