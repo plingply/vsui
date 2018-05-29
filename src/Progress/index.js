@@ -29,7 +29,6 @@ let progress = {
 			}, 10)
 		},
 		finish() {
-			console.log(this.count,'fishend')
 			clearInterval(this.intval)
 			// this.finish()
 			this.intval = setInterval(() => {
