@@ -21,7 +21,7 @@ let progress = {
 			this.count = 0
 			this.opacity = 1
 			this.intval = setInterval(() => {
-				this.count++
+				this.count += 2
 				this.opacity = this.opacity > 1 ? 1 : this.opacity
 				if (this.count >= 95) {
 					clearInterval(this.intval)
@@ -29,17 +29,17 @@ let progress = {
 			}, 10)
 		},
 		finish() {
-			console.log(this.count, 'finshed')
+			console.log(this.count,'fishend')
 			clearInterval(this.intval)
 			// this.finish()
 			this.intval = setInterval(() => {
-				this.count++
+				this.count += 2
 				if (this.count >= 100) {
 					clearInterval(this.intval)
+					this.opacity = 0
 					setTimeout(() => {
 						this.show = false
-						this.opacity = 0
-					}, 100)
+					}, 300)
 				}
 			}, 10)
 
