@@ -10,7 +10,7 @@ let progress = {
 			count: 0,
 			show: false,
 			intval: '',
-			opacity:0
+			opacity: 0
 		}
 	},
 	methods: {
@@ -22,18 +22,18 @@ let progress = {
 			clearInterval(this.intval)
 			this.intval = setInterval(() => {
 				this.count++
-				this.opacity = this.opacity>1?1:this.opacity
+				this.opacity = this.opacity > 1 ? 1 : this.opacity
 				if (this.count > 95) {
 					clearInterval(this.intval)
 				}
 			}, 10)
 		},
 		finish() {
-			setTimeout(()=>{
-				this.count = 100
+			this.count = 100
+			setTimeout(() => {
 				this.show = false
 				this.opacity = 0
-			},500)
+			}, 500)
 		}
 	},
 	created() {
