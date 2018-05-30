@@ -25,13 +25,13 @@ let progress = {
 				if (this.count >= 90) {
 					clearInterval(this.intval)
 				}
-			}, 30)
+			}, 20)
 		},
 		finish() {
 			clearInterval(this.intval)
 			// this.finish()
 			this.intval = setInterval(() => {
-				this.count += 2
+				this.count += parseInt(Math.random()*5)
 				if (this.count > 100) {
 					clearInterval(this.intval)
 					this.count = 100
@@ -40,7 +40,7 @@ let progress = {
 						this.show = false
 					}, 300)
 				}
-			}, 30)
+			}, 20)
 
 		}
 	}
