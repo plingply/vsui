@@ -5,8 +5,7 @@ let progress = {
 	template,
 	data() {
 		return {
-			style: "",
-			color: '',
+			color: '#33C24D',
 			count: 0,
 			show: false,
 			intval: '',
@@ -16,7 +15,7 @@ let progress = {
 	methods: {
 		start(color) {
 			clearInterval(this.intval)
-			this.color = color ? color : ''
+			this.color = color ? color : '#33C24D'
 			this.show = true
 			this.count = 0
 			this.opacity = 1
@@ -43,9 +42,6 @@ let progress = {
 			}, 10)
 
 		}
-	},
-	created() {
-		this.style = this.color == 'false' ? '' : this.color
 	}
 }
 
