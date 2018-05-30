@@ -25,7 +25,7 @@ let progress = {
 				if (this.count >= 90) {
 					clearInterval(this.intval)
 				}
-			}, 10)
+			}, 20)
 		},
 		finish() {
 			clearInterval(this.intval)
@@ -38,9 +38,9 @@ let progress = {
 					setTimeout(() => {
 						this.opacity = 0
 						this.show = false
-					}, 1000)
+					}, 500)
 				}
-			}, 10)
+			}, 20)
 
 		}
 	}
