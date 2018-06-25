@@ -24,7 +24,6 @@ let uiButton = {
         }
     },
     created() {
-        console.log(this.type.indexOf('text'))
         let str1 = 'ui-' + this.type.split(" ")[0]
         let str2 = this.type.split(" ")[1] ? (' ui-' + this.type.split(" ")[1]) : ''
         this.className = str1 + str2 + ' ' + (this.type.indexOf('text') === -1 ? ('ui-' + this.size) : 'ui-small')
